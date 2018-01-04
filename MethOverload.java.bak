@@ -1,0 +1,33 @@
+class BANK
+{
+	int interest(){ return 0; }
+}
+
+class SBI extends BANK
+{
+	int interest(){ return 8; }
+}
+
+class ICICI extends BANK
+{
+	int interest(){ return 7; }
+}
+
+class AXIS extends BANK
+{
+	int interest(){ return 9; }
+}
+
+class MethOverload
+{
+	public static void main(String[] args){
+	
+	SBI obj = new SBI();
+	BANK objs = (BANK)obj;
+	//ICICI obji = ICICI(obj);
+	//AXIS obja =AXIS(obj);
+
+	System.out.println(objs.interest());
+	
+	}
+}

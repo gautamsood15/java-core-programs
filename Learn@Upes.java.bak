@@ -1,0 +1,10 @@
+public class Learn@Upes {         
+    Learn@Upes example() {
+            System.out.println(this);
+    return this;
+    }
+public static void main(String []args) {
+            Learn@Upes obj= new Learn@Upes().example();
+            System.out.println(obj);
+}
+}
