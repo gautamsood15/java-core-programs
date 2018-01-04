@@ -1,0 +1,15 @@
+import java.io.File;
+import java.io.IOException;
+public class FileClass
+{
+	public static void main(String[] args) throws IOException
+		{
+	
+		File f1  = new File("C:/Users/gaurav/Documents/editplus/java/files/file2.txt");
+		f1.createNewFile();
+		System.out.println("Write Permission :"+f1.canWrite());
+		System.out.println("Does File Exists :"+f1.exists());
+		System.out.println("Name of file :"+f1.getName());
+		System.out.println("Size of file :"+f1.length());
+	}
+}
