@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class expsevenone
+{
+	public static void main(String[] args){
+		
+		int []roll = new int[]{1,2,3,4,5,6,7,8,9,10};
+		String [] name = new String[]{"sammir","sam","krishna","banduram","vishesh","raghav","ram","shayam","rahul","gautam"};
+		
+		Scanner sc = new Scanner(System.in);	
+		System.out.println("enter the rollno:-");
+
+		try{
+			int rollno = sc.nextInt();
+			System.out.println(name[rollno]);
+		}
+		catch(ArrayIndexOutOfBoundsException e){
+				System.out.println("enter the correct index  "+e.getMessage());
+
+		}
+		finally{
+		
+		System.out.println("more code");
+		}
+		
+	}
+}
