@@ -1,0 +1,25 @@
+public class Constructor 
+{
+
+	int a,b,c; 
+Constructor(){
+a=0;
+b=0;
+c=0;
+
+}
+//Constructor(int x,int y,int z){
+	a=x;
+	b=y;
+	c=z;
+
+}
+	public static void main(String[] args) 
+	{
+		
+		Constructor c1 = new Constructor();
+		Constructor c2 = new Constructor(12,12,12);
+		System.out.println(c1.a);
+	//	System.out.println(c2.a+c2.c+c2.b);
+	}
+}
