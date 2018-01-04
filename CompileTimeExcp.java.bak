@@ -1,0 +1,11 @@
+import java.io.*;
+public class CompileTimeExcp
+{
+	public static void main(String[] args)throws IOException
+		{
+		
+		throw new IOException();
+		//System.out.println("hey pussy");
+	
+	}
+}
