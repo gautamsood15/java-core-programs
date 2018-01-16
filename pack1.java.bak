@@ -1,0 +1,10 @@
+package com.pack1;
+import java.lang.*;
+
+class pack1
+{
+	public static void main(String[] args){
+		System.out.println("this is pack1 class file");
+	
+	}
+}

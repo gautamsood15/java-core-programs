@@ -1,38 +1,32 @@
 class A implements Runnable
 {
-	synchronized public void run(){
-		int i;
-		for(i=0;i<=10;i++){
-		System.out.println("Thread A  :"+i);
+	public void run(){
+	
+		System.out.println("class A run");
 		
 		}
-	
-	}
 }
+
 
 class B implements Runnable
 {
-	synchronized public void run(){
-	int i;
-	for(i=0;i<=10;i++){
-		System.out.println("Thread B :"+i);
+	public void run(){
 	
-	}
-	
-	}
+		System.out.println("class B run");
 
 }
 
+public static void main(String[] args){
 
-public class Thread1
-{
-	public static void main(String[] args){
-		Thread t1 = new Thread(new A());
-		Thread t2 = new Thread(new B());
-		t1.start();
-		t2.start();
-	
-		
-	
-		}
+	A a  = new A();
+	B b = new B();
+	Thread t1 = new Thread(a);
+	Thread t2 = new Thread(b);
+	t1.start();
+	t2.start();
+	System.out.println("class main!");
+
 }
+}
+	
+	
