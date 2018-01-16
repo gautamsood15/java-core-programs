@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class StringFxn
+{
+	public static void main(String[] args){
+		
+		String s1 = new String("java");
+
+		if (s1.equals("java"))
+		{
+			System.out.println("equals() compares data for string");
+		}
+
+		else{
+		
+			System.out.println("equals() compares obj reference string");
+		
+		}
+	
+		if (s1.equalsIgnoreCase("Java"))
+		{
+			System.out.println("string are equal ignoring the case");
+		}
+		else {
+		
+			System.out.println("String are not equals");
+		}
+		
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter username :-");
+	String usr = sc.next();
+	
+	System.out.println(usr.trim());
+	System.out.println(usr.compareTo(s1));
+
+
+
+	}
+}
