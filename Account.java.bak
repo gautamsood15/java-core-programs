@@ -1,0 +1,18 @@
+package com.Balance;
+import java.lang.*;
+
+public class Account 
+{
+	void DisplayBalance(int x){
+	System.out.println("The Balance is: "+x);
+		
+	}
+}
+
+class Car
+{
+	void Milage(int y){
+		System.out.println("The Milage is: "+y);
+		
+		}
+}
