@@ -1,0 +1,55 @@
+class A extends Thread
+{
+	public void run(){
+		for (int i=0;i<=10 ;i++ )
+		{
+			try
+			{
+				Thread.sleep(500);
+			}
+			catch (Exception e)
+			{
+				System.out.println(e);
+			}
+		
+			System.out.println(i);
+		}
+	
+	}
+
+}
+
+
+
+public class ThreadJoin
+{
+	public static void main(String[] args) {
+	
+		A obj1 = new A();
+		A obj2 = new A();
+		A obj3 = new A();
+
+		obj1.setName("gautam");
+		obj2.setName("sood");
+		obj3.setName("sheela");
+
+		System.out.println("Thread 1 :"+"Name :"+obj1.getName()+" ID :"+obj1.getId());
+		System.out.println("Thread 2 :"+"Name :"+obj2.getName()+" ID :"+obj2.getId());
+		System.out.println("Thread 3 :"+"Name :"+obj3.getName()+" ID :"+obj3.getId());
+
+
+		obj1.start();
+		try
+		{
+			obj1.join(1500);
+		}
+		catch (Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		obj2.start();
+		obj3.start();
+	
+	}
+}
